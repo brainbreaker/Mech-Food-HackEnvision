@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#032650</color>
+    <color name="colorPrimaryDark">#FF001126</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLight">#ff9f9f</color>
+    <color name="colorFloatingActionButton">#B3E5FC</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#000000</color>
+    <color name="colorText">#000000</color>
+    <color name="colorBlackHeader">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlue">#2f477a</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#b615c721</color>
+    <color name="colorCheckoutButton">#7f2020</color>
+
+    <!-- Circular progress bar -->
+    <color name="circular_progress_default_progress">#FE734C</color>
+    <color name="circular_progress_default_background">#00000000</color>
+    <color name="circular_progress_default_title">#828282</color>
+    <color name="circular_progress_default_subtitle">#828282</color>
+</resources>

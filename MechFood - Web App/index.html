@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MechFood</title>
+
+<link rel="stylesheet" href="mechFoodMain.css">
+<link rel="stylesheet" href="mechFoodContent.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="dish.css">
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="Checkout.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="MechFood.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+<script src="MechFoodFirebase.js"></script>
+
+<style>
+	.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img 
+  {
+     width: 100%;
+      margin: auto;
+	  height:250px;	
+	  width:100%;
+  }
+
+</style>
+
+</head>
+
+
+<body>
+
+	<div class="Header">
+		MechFood
+        <span class="glyphicon glyphicon glyphicon-glass" style="margin-left:20px; font-size:35px; margin-top:20px;"></span>
+	</div>
+
+	<div class="subHeader">
+		"Where DTU eats off hunger..."
+	</div>
+
+	<div class="content">
+		<div class="button">
+        	<button id="popularButton" class="activeButton">Popular</button>
+            <button id="menuButton">Menu</button>
+            <button id="cartButton">Cart<span class="glyphicon glyphicon-shopping-cart" style="margin-top:20px;  font-size:12px; margin-left:10px"></span></button>
+        </div>
+        
+        <div>
+        
+        </div>
+        
+    </div>
+
+<!--Carousel Code-->	
+
+<div class="content">
+
+
+<div class="container" >
+            
+<div id="myCarousel" class="carousel slide " data-ride="carousel" style="width:100%; position:relative; left:0px; height:250px; width:40%; margin-left:26%">
+
+
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+    <!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+
+<div class="item active">
+<img src="Img/img1.jpg" alt="1">
+</div>
+
+<div class="item">
+<img src="Img/img2.jpg" alt="2">
+</div>
+    
+<div class="item">
+<img src="Img/img3.jpg" alt="3" >
+</div>
+</div>
+
+    <!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+
+</div>
+<!--Carousel Code ends -->
+	
+    
+    <!-- Code for Popular Section -->
+	<div class="content">
+    <div class="popularBlock">
+        <ol class="dish_list">
+        <!-- This place will have the list of top three popular dishes. We get that from the database -->
+        </ol>
+
+    </div>
+	
+    
+    <!-- Now, Code for menu section -->
+    
+    <div class="menuBlock">	
+        <ol class="dish_list">
+        <!-- This place will have the list of all dishes. We get that from the database -->
+        </ol>
+    </div>
+    
+    
+    <!-- Now, placing the cart section -->
+    
+    <div class="cartBlock">
+	    <ol class="dish_list">
+		<!-- This place will have the list of all cart Items. We get that from the database -->
+        </ol>
+        
+        
+        <br><br><br><br>
+        <div class="checkout" style="margin-top:100px">
+
+<div class="checkout_total">0
+</div>
+
+<div class="checkout_form">
+<br>
+
+<form role="form">
+<div class="form-group">
+<label for="table" style="align:center; position:absolute; left:80px; top:10px"><b>Enter your Table Number</b></label>
+<input type="text" class="form-control" id="table" style="width:200px; position:absolute; left:70px;">
+</div>
+  
+</form>
+
+
+</div>
+
+<div class="checkout_submit">
+<h2 align="center"><b>SUBMIT</b></h2>
+</div>
+
+
+        </div>
+    </div>
+    
+	</div>
+
+</body>
+</html>

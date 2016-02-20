@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MechFood</title>
+
+<link rel="stylesheet" href="mechFoodMain.css">
+<link rel="stylesheet" href="mechFoodContent.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="dish.css">
+<link rel="stylesheet" href="cart.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="MechFood.js"></script> -->
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+<script src="MechFoodFirebase.js"></script>
+
+</head>
+
+
+<body>
+
+	<div class="Header">
+		MechFood
+        <span class="glyphicon glyphicon-glass" style="float:right; margin-top:20px;"></span>
+	</div>
+
+	<div class="subHeader">
+		"Where DTU eats off hunger..."
+	</div>
+
+	<div class="content">
+		<div class="button">
+        	<button id="popularButton">Popular</button>
+            <button id="menuButton">Menu</button>
+        </div>
+        
+        <div>
+        
+        </div>
+        
+    </div>	
+    
+    <!-- Code for Cart Section -->
+	<div class="content">
+    	<div class="cart_item">
+			<div class="cart_item_total"></div> 
+			<div class="cart_item_name"></div>
+			<div class="cart_item_quantity"></div>
+			<div class="cart_item_rate"></div>
+		</div>
+    </div>
+
+</body>
+</html>

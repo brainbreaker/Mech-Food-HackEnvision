@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        card_view:paddingEnd="10dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ProductName"
+                    android:text="RAJMA CHAWAL"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:textSize="20dp"
+                    android:fontFamily="serif"
+                    android:textColor="#fc7e00"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/xyz"
+                    android:textSize="20dp"
+                    android:text="x"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/ProductName" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignLeft="@+id/xyz"
+                    android:background="@drawable/button_background_green"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignStart="@id/xyz">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/space1"
+                    android:textSize="20dp"
+                    android:text=" "
+                    android:inputType="number"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Quantity"
+                    android:textSize="15dp"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Space2"
+                    android:textSize="20dp"
+                    android:text=" "
+                    />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/remove"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@+id/ProductName"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@android:drawable/ic_delete" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:layout_alignBottom="@+id/xyz"
+                    android:layout_toLeftOf="@+id/remove"
+                    android:layout_toStartOf="@+id/remove" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorBlackHeader"
+                android:layout_marginTop="2dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:id="@+id/Total"
+                    android:layout_gravity="right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="serif"
+                    android:textColor="#fc7e00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:  "
+                    android:id="@+id/textView3"
+                    android:layout_gravity="right"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/Total"
+                    android:layout_toStartOf="@+id/Total"
+                    android:fontFamily="serif"
+                    android:textColor="#fc7e00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATE"
+                    android:id="@+id/Rate"
+                    android:textSize="20dp"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="serif"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

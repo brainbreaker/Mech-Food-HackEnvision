@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cart_item
+{
+width:480px;
+margin-left:20px;
+background-color:#00132D;
+height:150px;
+}
+
+.cart_item_name
+{
+width:60.5%;
+position:relative;
+top:10px;
+background:#004EC8;
+height:55%;
+margin:10px;
+font-family:"Eras Normal";
+font-size:30px;
+line-height:70px;
+color:#FFFFFF;
+}
+
+.cart_item_rate
+{
+width:15%;
+position:relative;
+float:left;
+background:#00B1A4;
+height:30%;
+margin:10px;
+font-family:"Eras Normal";
+font-size:30px;
+line-height:50px;
+
+}
+
+.cart_item_quantity
+{
+width:15%;
+position:relative;
+float:left;
+background:#39B1C9;
+height:30%;
+margin:10px;
+line-height:30px;
+}
+
+.plus{
+	position:relative;
+}
+
+.minus{
+	position:relative;	
+}
+
+.cart_item_total
+{
+width:35%;
+position:relative;
+float:right;
+background:#73C3F5;
+height:90%;
+margin:10px;
+font-family:"Eras Normal";
+font-size:50px;
+line-height:120px;
+}
+
+.cart_remove{
+	width:15%;
+	position:relative;
+	float:left;
+	background:#73C3F5;
+	height:30%;
+	margin:10px;
+	font-family:"Eras Normal";
+	font-size:30px;
+	line-height:50px;
+	cursor:pointer;
+}

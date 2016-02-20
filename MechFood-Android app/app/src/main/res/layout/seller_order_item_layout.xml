@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        card_view:paddingEnd="10dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ProductImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/OrderId"
+                android:text="ORDER ID1 - Table Number 2"
+                android:focusable="false"
+                android:enabled="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dishes"
+                android:id="@+id/Dishes"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textSize="15dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="serif"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount to Collect"
+                android:id="@+id/Amount"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textSize="15dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="serif"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Not Prepared"
+                android:id="@+id/Status"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textSize="15dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="serif"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prepared"
+                android:id="@+id/prepared"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="@drawable/cart"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:id="@+id/AddToCart" />-->
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

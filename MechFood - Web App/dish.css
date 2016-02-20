@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+ol.dish_list{
+	list-style-type:none;
+		display:inline;
+		float:left;
+}
+
+ol.dish_list li{
+	display:inline;
+	float:left;
+}
+
+.dish
+{
+height:300px;
+width:300px;
+background:#005178;
+margin-left:7%;
+}
+
+.dish_image
+{
+height:180px;
+width:280px;
+position:relative;
+display:block;
+top:10px;
+background:#0078AB;
+margin:10px;
+}
+
+.dish img{
+	height:180px;
+	width:280px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:none;
+}
+
+.dish_name
+{
+position:relative;
+display:block;
+margin:10px;
+margin-top:20px;
+height:45px;
+width:280px;
+background:#00D7C6;
+line-height:40px;
+}
+
+.dish_rate
+{
+position:relative;
+top:-10px;
+height:35px;
+width:130px;
+background:#01C57F;
+float:left;
+margin:10px;
+line-height:35px;
+}
+
+.dish_cart
+{
+position:relative;
+top:-10px;
+margin:10px;
+height:35px;
+width:100px;
+background:#01C57F;
+float:right;
+line-height:35px;
+transition:all 0.5s ease-in-out;
+}
+
+.dish_cart:hover{
+	background-color:rgba(24,91,65,1.00);
+	cursor:pointer;
+	color:#FFFFFF;
+	width:130px;
+	font-size:20px;
+}
+.dish_id{
+	display:none;
+}

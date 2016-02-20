@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        card_view:paddingEnd="10dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/ProductImage"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ProductImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/ProductName"
+                android:text="RAJMA CHAWAL"
+                android:focusable="false"
+                android:enabled="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif"
+                android:textColor="@color/colorWhite" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/cart"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/AddToCart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATE"
+                    android:id="@+id/Rate"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:textSize="15dp"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

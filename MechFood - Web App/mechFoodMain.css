@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"Eras Normal";
+	src:url(ERASMD.TTF);
+}
+
+@font-face{
+	font-family:"Eras Light";
+	src:url(ERASLGHT.TTF);
+}
+
+body{
+	overflow-x:hidden;
+	width:100%;
+	text-align:center;
+	background-color:rgba(191,24,27,0.8);
+}
+
+.Header{
+	z-index:10;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color:rgba(15,15,15,0.8);
+	text-align:center;
+	padding:20px 20px;
+	font-family:"Eras Normal";
+	font-size:50px;
+	color:#FFFFFF;
+	text-shadow:rgba(177,61,63,1.00);
+}
+
+.subHeader{
+	position:relative;
+	font-family:"Eras Light";
+	font-size:30px;
+	color:rgba(35,0,65,1.00);
+	top:120px;
+	align-items:center;
+}
